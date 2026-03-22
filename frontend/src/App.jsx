@@ -13,7 +13,7 @@ function App() {
     setResult(null);
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/solve-task", {
+      const res = await axios.post("https://ai-backend-e688.onrender.com/solve-task", {
         task: task,
       });
       setResult(res.data);
